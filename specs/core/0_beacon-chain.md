@@ -1392,9 +1392,18 @@ We aim to have a STARK-friendly hash function `hash(x)` for the production launc
 
 This section is divided into Normative and Informative references.  Normative references are those that must be read in order to implement this specification, while Informative references are merely that, information.  An example of the former might be the details of a required consensus algorithm, and an example of the latter might be a pointer to research that demonstrates why a particular consensus algorithm might be better suited for inclusion in the standard than another.
 
+Reference to normative item [[sample-norm]](#ref-sample-norm).
+Reference to informative item [[sample-inform]](#ref-sample-inform).
+
 ## Normative
+<dl>
+ <dt><a id="ref-sample-norm">\[sample-norm\]</a></dt>
+ <dd>Normative reference with *styling*</dd>
+</dl>
 
 ## Informative
+<a id="ref-sample-inform"></a>**sample-inform**  
+Informative reference with *styling*
 
 # Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
