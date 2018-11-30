@@ -74,12 +74,12 @@ Unless otherwise indicated, code appearing in `this style` is to be interpreted 
 
 * **Validator** - a participant in the Casper/sharding consensus system. You can become one by depositing 32 ETH into the Casper mechanism.
 * **Active validator** - a validator currently participating in the protocol which the Casper mechanism looks to produce and attest to blocks, crosslinks and other consensus objects.
-* **Committee** - a (pseudo-) randomly sampled subset of active validators. When a committee is referred to collectively, as in "this committee attests to X", this is assumed to mean "some subset of that committee that contains enough validators that the protocol recognizes it as representing the committee".
+* **Committee** <a id="dfn-committee"></a> - a (pseudo-) randomly sampled subset of active validators. When a [committee](#dfn-committee) is referred to collectively, as in "this [committee](#dfn-committee) attests to X", this is assumed to mean "some subset of that [committee](#dfn-committee) that contains enough validators that the protocol recognizes it as representing the [committee](#dfn-committee)".
 * **Proposer** - the validator that creates a beacon chain block
-* **Attester** - a validator that is part of a committee that needs to sign off on a beacon chain block while simultaneously creating a link (crosslink) to a recent shard block on a particular shard chain.
+* **Attester** - a validator that is part of a [committee](#dfn-committee) that needs to sign off on a beacon chain block while simultaneously creating a link (crosslink) to a recent shard block on a particular shard chain.
 * **Beacon chain** - the central PoS chain that is the base of the sharding system.
 * **Shard chain** - one of the chains on which user transactions take place and account data is stored.
-* **Crosslink** - a set of signatures from a committee attesting to a block in a shard chain, which can be included into the beacon chain. Crosslinks are the main means by which the beacon chain "learns about" the updated state of shard chains.
+* **Crosslink** - a set of signatures from a [committee](#dfn-committee) attesting to a block in a shard chain, which can be included into the beacon chain. Crosslinks are the main means by which the beacon chain "learns about" the updated state of shard chains.
 * **Slot** - a period of `SLOT_DURATION` seconds, during which one proposer has the ability to create a beacon chain block and some attesters have the ability to make attestations
 * **Epoch** - an aligned span of slots during which all validators get exactly one chance to make an attestation
 * **Finalized**, **justified** - see Casper FFG finalization here: https://arxiv.org/abs/1710.09437
@@ -162,7 +162,7 @@ Unless otherwise indicated, code appearing in `this style` is to be interpreted 
 
 **Notes**
 
-* See a recommended min committee size of 111 [here](https://vitalik.ca/files/Ithaca201807_Sharding.pdf); the shuffling algorithm will generally ensure the committee size is at least half the target.
+* See a recommended min [committee](#dfn-committee) size of 111 [here](https://vitalik.ca/files/Ithaca201807_Sharding.pdf); the shuffling algorithm will generally ensure the [committee](#dfn-committee) size is at least half the target.
 * The `SQRT_E_DROP_TIME` constant is the amount of time it takes for the inactivity leak to cut deposits of non-participating validators by ~39.4%.
 * The `BASE_REWARD_QUOTIENT` constant dictates the per-epoch interest rate assuming all validators are participating, assuming total deposits of 1 ETH. It corresponds to ~2.57% annual interest assuming 10 million participating ETH.
 * At most `1/MAX_CHURN_QUOTIENT` of the validators can change during each validator registry change.
