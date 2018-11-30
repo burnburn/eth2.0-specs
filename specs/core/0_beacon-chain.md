@@ -1403,7 +1403,7 @@ Reference to informative item [[sample-inform]](#ref-sample-inform).
 
 ## Informative
 <a id="ref-sample-inform"></a> _**sample-inform**_  
-&nbsp; Informative reference with *styling*
+ &nbsp; Informative reference with *styling*
 
 # Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
