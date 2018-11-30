@@ -1402,7 +1402,8 @@ Reference to informative item [[sample-inform]](#ref-sample-inform).
 </dl>
 
 ## Informative
-<a id="ref-sample-inform"></a>**sample-inform**
+<a id="ref-sample-inform"></a> **sample-inform**
+
     Informative reference with *styling*
 
 # Copyright
