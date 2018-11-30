@@ -1397,13 +1397,13 @@ Reference to informative item [[sample-inform]](#ref-sample-inform).
 
 ## Normative
 <dl>
- <dt><a id="ref-sample-norm">\[sample-norm\]</a></dt>
+ <dt><a id="ref-sample-norm">[sample-norm]</a></dt>
  <dd>Normative reference with *styling*</dd>
 </dl>
 
 ## Informative
 <a id="ref-sample-inform"></a>**sample-inform**  
-Informative reference with *styling*
+    Informative reference with *styling*
 
 # Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
