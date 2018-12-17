@@ -168,7 +168,7 @@ Unless otherwise indicated, code appearing in `this style` is to be interpreted 
 | `LATEST_BLOCK_ROOTS_LENGTH` | `2**13` (= 8,192) | block roots |
 | `EMPTY_SIGNATURE` | `[bytes48(0), bytes48(0)]` | - |
 
-* For the safety of crosslinks a minimum committee size of 111 is [recommended](https://vitalik.ca/files/Ithaca201807_Sharding.pdf). (Unbiasable randomness with a Verifiable Delay Function (VDF) will improve committee robustness and lower the safe minimum committee size.) The shuffling algorithm generally ensures (assuming sufficient validators) committee sizes at least `TARGET_COMMITTEE_SIZE // 2`.
+* For the safety of crosslinks a minimum committee size of 111 is recommended [[sharding]](#ref-sharding). (Unbiasable randomness with a Verifiable Delay Function (VDF) will improve committee robustness and lower the safe minimum committee size.) The shuffling algorithm generally ensures (assuming sufficient validators) committee sizes at least `TARGET_COMMITTEE_SIZE // 2`.
 
 ### Deposit contract
 
@@ -1794,6 +1794,9 @@ This section is divided into Normative and Informative references.  Normative re
 ## Informative
 <a id="ref-python-poc"></a> _**python-poc**_
  &nbsp; _Python proof-of-concept implementation_. Ethereum Foundation. URL: https://github.com/ethereum/beacon_chain
+
+<a id="ref-sharding"></a> _**sharding**_  
+ &nbsp; _Sharding_. V. Buterin. URL: https://vitalik.ca/files/Ithaca201807_Sharding.pdf
 
 # Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
